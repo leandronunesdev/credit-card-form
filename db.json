@@ -1,0 +1,75 @@
+{
+  "creditCardData": [
+    {
+      "cardNumber": "5448280000000007",
+      "expirationDate": "01/28",
+      "cvv": "123",
+      "id": 1
+    },
+    {
+      "cardNumber": "5448280000000007",
+      "expirationDate": "01/28",
+      "cvv": "123",
+      "cardName": "leandro nunes",
+      "id": 2
+    },
+    {
+      "cardNumber": "4589193503755021",
+      "expirationDate": "09/26",
+      "cvv": "379",
+      "cardName": "Leandro Nunes da Silva",
+      "id": 3
+    },
+    {
+      "cardNumber": "5448280000000007",
+      "expirationDate": "01/2028",
+      "cvv": "123",
+      "cardName": "LEANDRO NUNES",
+      "id": 4
+    },
+    {
+      "cardNumber": "5448280000000007",
+      "expirationDate": "01/28",
+      "cvv": "123",
+      "cardName": "leandro silva",
+      "id": 5
+    },
+    {
+      "cardNumber": "5448280000000007",
+      "expirationDate": "01/2028",
+      "cvv": "123",
+      "cardName": "rubens pepeto",
+      "id": 6
+    },
+    {
+      "cardNumber": "5448280000000007",
+      "expirationDate": "0128",
+      "cvv": "123",
+      "cardName": "Potato",
+      "id": 7
+    },
+    {
+      "cardNumber": "5448280000000007",
+      "expirationDate": "01/28",
+      "cvv": "123",
+      "cardName": "Leandro Nunes",
+      "value": 1.12,
+      "id": 8
+    },
+    {
+      "cardNumber": "5448280000000007",
+      "expirationDate": "01/28",
+      "cvv": "123",
+      "cardName": "potato silva",
+      "id": 9
+    },
+    {
+      "cardNumber": "5448280000000007",
+      "expirationDate": "01/28",
+      "cvv": "123",
+      "cardName": "fliven silva",
+      "value": 1.12,
+      "id": 10
+    }
+  ]
+}
