@@ -19,7 +19,7 @@ const CreditCardComponent: React.FC = () => {
     expirationDate: "",
     cvv: "",
     cardName: "",
-    value: 1.12,
+    value: 0,
   });
 
   useEffect(() => {
@@ -51,6 +51,7 @@ const CreditCardComponent: React.FC = () => {
       ...paymentDetails,
       [e.target.name]: e.target.value,
     });
+    console.log(paymentDetails);
   };
 
   const handleSubmit = (e: FormEvent) => {
@@ -60,7 +61,7 @@ const CreditCardComponent: React.FC = () => {
     axios
       .post<CreditCard>(
         "https://1e2b-2804-14c-87c1-cf4b-00-1003.ngrok-free.app/creditCardData",
-        paymentDetails,
+        { ...paymentDetails, value: +paymentDetails.value },
         {
           headers: {
             "ngrok-skip-browser-warning": true,
@@ -74,6 +75,7 @@ const CreditCardComponent: React.FC = () => {
           expirationDate: "",
           cvv: "",
           cardName: "",
+          value: 0,
         });
       })
       .catch((error) => {
@@ -129,6 +131,18 @@ const CreditCardComponent: React.FC = () => {
             type="text"
             name="cardName"
             value={paymentDetails.cardName}
+            onChange={handleInputChange}
+            required
+          />
+        </label>
+        <br />
+
+        <label>
+          Value:
+          <input
+            type="number"
+            name="value"
+            value={paymentDetails.value}
             onChange={handleInputChange}
             required
           />
